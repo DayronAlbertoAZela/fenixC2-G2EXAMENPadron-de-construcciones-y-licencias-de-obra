@@ -1,6 +1,4 @@
-/* =========================
-   BOTON BASE (btn)
-   ========================= */
+
 
 .btn {
     -fx-font-size: 14px;
@@ -11,9 +9,7 @@
     -fx-cursor: hand;
 }
 
-/* =========================
-   PRIMARY
-   ========================= */
+
 
 .btn-primary {
     -fx-background-color: #0d6efd;
@@ -28,9 +24,7 @@
     -fx-background-color: #0a58ca;
 }
 
-/* =========================
-   SUCCESS
-   ========================= */
+
 
 .btn-success {
     -fx-background-color: #198754;
@@ -45,9 +39,7 @@
     -fx-background-color: #146c43;
 }
 
-/* =========================
-   DANGER
-   ========================= */
+
 
 .btn-danger {
     -fx-background-color: #dc3545;
@@ -62,9 +54,7 @@
     -fx-background-color: #b02a37;
 }
 
-/* =========================
-   WARNING
-   ========================= */
+
 
 .btn-warning {
     -fx-background-color: #ffc107;
@@ -82,9 +72,7 @@
 ```
 
 
-/* =========================
-   TABLA
-   ========================= */
+
 
 .table-view .column-header .label {
     -fx-font-weight: bold;

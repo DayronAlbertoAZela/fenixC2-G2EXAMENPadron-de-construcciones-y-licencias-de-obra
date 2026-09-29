@@ -33,12 +33,12 @@ public class LicenciaObraController {
     @FXML private TableView<LicenciaObra> tableView;
     @FXML private Label lbnMsg;
 
-    private final ILicenciaObraService ls;          // depende de la INTERFAZ
+    private final ILicenciaObraService ls;
     private final ToltipCustom ttc = new ToltipCustom();
     private Validator validator;
     private ObservableList<LicenciaObra> listaLicencias;
     private LicenciaObra formulario;
-    private Long idLicenciaCE = 0L;                  // 0 = nuevo, >0 = editando
+    private Long idLicenciaCE = 0L;
 
     public LicenciaObraController(ILicenciaObraService ls) {
         this.ls = ls;
@@ -69,7 +69,7 @@ public class LicenciaObraController {
         listar();
     }
 
-    // ---------------- READ ----------------
+
     public void listar() {
         listaLicencias = FXCollections.observableArrayList(ls.findAll());
         filtrar(txtFiltroDato.getText());
@@ -88,7 +88,7 @@ public class LicenciaObraController {
                 || l.getTipoObra().getDescripcion().toLowerCase().contains(f)).toList());
     }
 
-    // ---------------- CREATE / UPDATE ----------------
+
     @FXML
     public void validarFormulario() {
         formulario = new LicenciaObra();
@@ -165,7 +165,7 @@ public class LicenciaObraController {
         }
     }
 
-    // ---------------- EDIT ----------------
+
     public void editForm(LicenciaObra l) {
         txtNumeroLicencia.setText(l.getNumeroLicencia());
         txtNumeroLicencia.setEditable(false);        // la clave de negocio no se cambia
@@ -182,7 +182,7 @@ public class LicenciaObraController {
         mensaje("Editando licencia " + l.getNumeroLicencia(), "blue");
     }
 
-    // ---------------- DELETE ----------------
+
     private void eliminar(LicenciaObra l) {
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION,
                 "Eliminar la licencia " + l.getNumeroLicencia() + "?",
@@ -198,7 +198,7 @@ public class LicenciaObraController {
                 });
     }
 
-    // ---------------- UTILIDADES ----------------
+
     @FXML
     public void clearForm() {
         txtNumeroLicencia.clear();

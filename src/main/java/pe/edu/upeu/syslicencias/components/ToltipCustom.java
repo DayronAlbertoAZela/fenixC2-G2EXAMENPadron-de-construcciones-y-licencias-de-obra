@@ -5,9 +5,8 @@ import javafx.scene.control.Tooltip;
 import javafx.util.Duration;
 
 public class ToltipCustom {
-    // -----------------------------------------------------------------------
-    //  VALIDACIÓN
-    // -----------------------------------------------------------------------
+
+
     public static final String ESTILO_ERROR  = "-fx-border-color: #e53935; -fx-border-width: 2px; -fx-border-radius: 3px;";
     public static final String ESTILO_NORMAL = "";
 

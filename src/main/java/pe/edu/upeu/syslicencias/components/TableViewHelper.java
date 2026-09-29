@@ -22,7 +22,7 @@ public class TableViewHelper<T> {
             TableColumn<T, Object> column = new TableColumn<>(entry.getKey());
             String field = entry.getValue().getField();
 
-            // Detectar si el campo es un objeto complejo o una propiedad básica
+
             if (field.contains(".")) {
 
                 column.setCellValueFactory(cellData -> {
@@ -54,7 +54,7 @@ public class TableViewHelper<T> {
         }
 
         addActionColumn(tableView, updateAction, deleteAction);
-        // Ajustar el ancho del TableView según el contenido
+
         tableView.setColumnResizePolicy(TableView.UNCONSTRAINED_RESIZE_POLICY);
     }
 

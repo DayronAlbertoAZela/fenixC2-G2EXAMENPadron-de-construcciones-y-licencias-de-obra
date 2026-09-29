@@ -1,8 +1,8 @@
 package pe.edu.upeu.syslicencias.components;
 
 public class ColumnInfo {
-    private String field;  // El nombre del campo en el modelo
-    private Double width;  // El ancho deseado para la columna
+    private String field;
+    private Double width;
 
     public ColumnInfo(String field, Double width) {
         this.field = field;
